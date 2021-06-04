@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity { BottomNavigationView navig
                 switch (item.getItemId()){
 
                     case R.id.nav_home:
-                        fragment = new HomeFragment();
+                        fragment = new Home();
                         break;
 
                     case R.id.nav_search:

@@ -226,14 +226,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="5dp"
-                        android:text="100k"
+                        android:text="200k / Month"
                         android:textSize="14dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="5dp"
-                        android:text="10 sesi"
+                        android:text="10 sesi - 1 bulan - 20jam"
                         android:textSize="14dp" />
                 </LinearLayout>
             </LinearLayout>
@@ -274,14 +274,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="5dp"
-                        android:text="100k"
+                        android:text="100k / Month"
                         android:textSize="14dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="5dp"
-                        android:text="10 sesi"
+                        android:text="3 sesi - 6 jam"
                         android:textSize="14dp" />
                 </LinearLayout>
             </LinearLayout>
@@ -322,15 +322,15 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="5dp"
-                        android:text="100k"
+                        android:text="200k / Month"
                         android:textSize="14dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="5dp"
-                        android:text="10 sesi"
-                        android:textSize="14dp" />
+                        android:text="10 sesi - 1 bulan - 20jam"
+                        android:textSize="14dp"/>
                 </LinearLayout>
             </LinearLayout>
         </androidx.cardview.widget.CardView>

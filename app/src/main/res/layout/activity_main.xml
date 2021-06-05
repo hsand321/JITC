@@ -18,11 +18,10 @@
     <com.ismaeldivita.chipnavigation.ChipNavigationBar
         android:id="@+id/bottomBar"
         android:layout_width="match_parent"
-        android:layout_height="72dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:background="@drawable/round_corner"
         android:elevation="16dp"
-        android:padding="8dp"
         app:cnb_menuResource="@menu/item_menu"/>
 
 </RelativeLayout>

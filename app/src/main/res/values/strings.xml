@@ -9,4 +9,9 @@
     <string name="jitc_yogyakarta">JITC Yogyakarta</string>
     <string name="home_text">Home</string>
     <string name="about_text">About</string>
+    <string name="explore_now">EXPLORE NOW</string>
+    <string name="mencari_pelatihan_yang_sesuai">Mencari pelatihan yang sesuai</string>
+    <string name="category">Category</string>
+    <string name="popular_training">Popular Training</string>
+    <string name="special_package">Special Package</string>
 </resources>

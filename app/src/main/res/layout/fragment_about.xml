@@ -23,7 +23,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView">
@@ -98,7 +98,7 @@
                     android:layout_marginTop="15dp"
                     android:layout_marginEnd="25dp"
                     android:contentDescription="@null"
-                    android:src="@drawable/WhatsApp"
+                    android:src="@drawable/whatsapp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -107,7 +107,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="25dp"
                     android:layout_marginEnd="15dp"
                     android:fontFamily="@font/poppinsmedium"
                     android:text="@string/_0878_3995_3366"
@@ -130,7 +130,7 @@
                     android:layout_marginTop="15dp"
                     android:layout_marginEnd="25dp"
                     android:contentDescription="@null"
-                    android:src="@drawable/Sent"
+                    android:src="@drawable/sent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
@@ -161,7 +161,7 @@
                     android:layout_marginTop="15dp"
                     android:layout_marginEnd="25dp"
                     android:contentDescription="@null"
-                    android:src="@drawable/Instagram"
+                    android:src="@drawable/instagram"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
@@ -192,7 +192,7 @@
                     android:layout_marginTop="15dp"
                     android:layout_marginEnd="25dp"
                     android:contentDescription="@null"
-                    android:src="@drawable/Facebook"
+                    android:src="@drawable/facebook"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 

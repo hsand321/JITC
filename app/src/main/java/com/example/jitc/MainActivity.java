@@ -1,16 +1,22 @@
 package com.example.jitc;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import android.os.Bundle;
-import android.view.MenuItem;
+import android.util.Log;
 import android.view.WindowManager;
 
-import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.ismaeldivita.chipnavigation.ChipNavigationBar;
 
-public class MainActivity extends AppCompatActivity { BottomNavigationView navigationView;
+import static androidx.constraintlayout.motion.utils.Oscillator.TAG;
+
+public class MainActivity extends AppCompatActivity {
+
+    ChipNavigationBar BottomNav;
+    private Fragment fragment = null;
+    FragmentManager fragmentManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,29 +24,40 @@ public class MainActivity extends AppCompatActivity { BottomNavigationView navig
         setContentView(R.layout.activity_main);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        navigationView = findViewById(R.id.bottom_navigation);
-        getSupportFragmentManager().beginTransaction().replace(R.id.body_container, new HomeFragment()).commit();
-        navigationView.setSelectedItemId(R.id.nav_home);
-
-        navigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+        BottomNav = findViewById(R.id.bottomBar);
+        if (savedInstanceState == null) {
+            BottomNav.setItemSelected(R.id.home, true);
+            fragmentManager = getSupportFragmentManager();
+            HomeFragment homeFragment = new HomeFragment();
+            fragmentManager.beginTransaction()
+                    .replace(R.id.container, homeFragment)
+                    .commit();
+        }
+        BottomNav.setOnItemSelectedListener(new ChipNavigationBar.OnItemSelectedListener() {
             @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+            public void onItemSelected(int i) {
                 Fragment fragment = null;
-                switch (item.getItemId()){
 
+                switch (i) {
                     case R.id.nav_home:
-                        fragment = new Home();
+                        fragment = new HomeFragment();
                         break;
 
-                    case R.id.nav_search:
+                    case R.id.nav_about:
                         fragment = new AboutFragment();
                         break;
                 }
-                getSupportFragmentManager().beginTransaction().replace(R.id.body_container, fragment).commit();
+                if (fragment != null) {
+                    fragmentManager = getSupportFragmentManager();
+                    fragmentManager.beginTransaction()
+                            .replace(R.id.container, fragment)
+                            .commit();
 
-                return true;
+                } else {
+                    Log.e(TAG, "Error in creating fragment");
+                }
+
             }
         });
-
     }
 }

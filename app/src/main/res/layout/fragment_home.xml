@@ -19,8 +19,8 @@
             android:layout_marginEnd="24dp"
             android:fontFamily="@font/poppinsmedium"
             android:text="@string/explore_now"
-            android:textSize="24sp"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black"
+            android:textSize="24sp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -39,8 +39,8 @@
             android:layout_marginEnd="24dp"
             android:fontFamily="@font/poppinsregular"
             android:text="@string/category"
-            android:textSize="16sp"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black"
+            android:textSize="16sp" />
 
         <HorizontalScrollView
             android:layout_width="wrap_content"
@@ -56,13 +56,15 @@
                     android:id="@+id/cvOffice"
                     android:layout_width="120dp"
                     android:layout_height="150dp"
-                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
                     android:clickable="true"
+                    android:focusable="true"
                     app:cardCornerRadius="20dp">
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:contentDescription="@null"
                         android:src="@drawable/office" />
                 </androidx.cardview.widget.CardView>
 
@@ -70,13 +72,15 @@
                     android:id="@+id/cvDatabase"
                     android:layout_width="120dp"
                     android:layout_height="150dp"
-                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
                     android:clickable="true"
+                    android:focusable="true"
                     app:cardCornerRadius="20dp">
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:contentDescription="@null"
                         android:src="@drawable/database" />
                 </androidx.cardview.widget.CardView>
 
@@ -84,13 +88,15 @@
                     android:id="@+id/cvGrafis"
                     android:layout_width="120dp"
                     android:layout_height="150dp"
-                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
                     android:clickable="true"
+                    android:focusable="true"
                     app:cardCornerRadius="20dp">
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:contentDescription="@null"
                         android:src="@drawable/desain_grafis" />
                 </androidx.cardview.widget.CardView>
 
@@ -98,13 +104,15 @@
                     android:id="@+id/cvWeb"
                     android:layout_width="120dp"
                     android:layout_height="150dp"
-                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
                     android:clickable="true"
+                    android:focusable="true"
                     app:cardCornerRadius="20dp">
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:contentDescription="@null"
                         android:src="@drawable/web" />
                 </androidx.cardview.widget.CardView>
 
@@ -112,13 +120,15 @@
                     android:id="@+id/cvNetwork"
                     android:layout_width="120dp"
                     android:layout_height="150dp"
-                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
                     android:clickable="true"
+                    android:focusable="true"
                     app:cardCornerRadius="20dp">
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:contentDescription="@null"
                         android:src="@drawable/os_net" />
                 </androidx.cardview.widget.CardView>
 
@@ -126,13 +136,15 @@
                     android:id="@+id/cvProgram"
                     android:layout_width="120dp"
                     android:layout_height="150dp"
-                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
                     android:clickable="true"
+                    android:focusable="true"
                     app:cardCornerRadius="20dp">
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:contentDescription="@null"
                         android:src="@drawable/pemrograman" />
                 </androidx.cardview.widget.CardView>
 
@@ -140,13 +152,15 @@
                     android:id="@+id/cvMultimedia"
                     android:layout_width="120dp"
                     android:layout_height="150dp"
-                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
                     android:clickable="true"
+                    android:focusable="true"
                     app:cardCornerRadius="20dp">
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:contentDescription="@null"
                         android:src="@drawable/multimedia" />
                 </androidx.cardview.widget.CardView>
 
@@ -154,13 +168,15 @@
                     android:id="@+id/cvModelling"
                     android:layout_width="120dp"
                     android:layout_height="150dp"
-                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
                     android:clickable="true"
+                    android:focusable="true"
                     app:cardCornerRadius="20dp">
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:contentDescription="@null"
                         android:src="@drawable/modelling" />
                 </androidx.cardview.widget.CardView>
 
@@ -170,11 +186,13 @@
                     android:layout_height="150dp"
                     android:layout_margin="20dp"
                     android:clickable="true"
+                    android:focusable="true"
                     app:cardCornerRadius="20dp">
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:contentDescription="@null"
                         android:src="@drawable/request" />
                 </androidx.cardview.widget.CardView>
 
@@ -185,19 +203,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="24dp"
             android:fontFamily="@font/poppinsregular"
             android:text="@string/popular_training"
-            android:textSize="16sp"
             android:textColor="@color/black"
-            android:layout_marginTop="30dp"/>
+            android:textSize="16sp" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cvPraKuliah"
             android:layout_width="match_parent"
             android:layout_height="102dp"
-            android:clickable="true"
             android:layout_marginTop="15dp"
+            android:clickable="true"
             android:focusable="true">
 
             <LinearLayout
@@ -210,6 +228,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
+                    android:contentDescription="@null"
                     android:src="@drawable/pra_kuliah" />
 
                 <LinearLayout
@@ -221,23 +240,45 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppinsmedium"
                         android:padding="5dp"
-                        android:text="Pra kuliah"
-                        android:textSize="20dp" />
+                        android:text="@string/pra_kuliah"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
 
-                    <TextView
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="5dp"
-                        android:text="200k / Month"
-                        android:textSize="14dp" />
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:padding="5dp"
+                            android:text="@string/_200k_month"
+                            android:textColor="#5843BE"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinslight"
+                            android:padding="5dp"
+                            android:text="@string/month"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppinslight"
                         android:padding="5dp"
-                        android:text="10 sesi - 1 bulan - 20jam"
-                        android:textSize="14dp" />
+                        android:text="@string/_10_sesi_1_bulan_20jam"
+                        android:textColor="#7A7E86"
+                        android:textSize="14sp" />
                 </LinearLayout>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -246,8 +287,9 @@
             android:id="@+id/cvPraPendadaran"
             android:layout_width="match_parent"
             android:layout_height="102dp"
+            android:layout_marginTop="10dp"
             android:clickable="true"
-            android:layout_marginTop="10dp">
+            android:focusable="true">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -259,6 +301,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
+                    android:contentDescription="@null"
                     android:src="@drawable/pra_pendadaran" />
 
                 <LinearLayout
@@ -270,23 +313,45 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppinsmedium"
                         android:padding="5dp"
-                        android:text="Pra Pendadaran"
-                        android:textSize="20dp" />
+                        android:text="@string/pra_pendadaran"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
 
-                    <TextView
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="5dp"
-                        android:text="100k / Month"
-                        android:textSize="14dp" />
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:padding="5dp"
+                            android:text="@string/_100k_month"
+                            android:textColor="#5843BE"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinslight"
+                            android:padding="5dp"
+                            android:text="@string/month"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppinslight"
                         android:padding="5dp"
-                        android:text="3 sesi - 6 jam"
-                        android:textSize="14dp" />
+                        android:text="@string/_3_sesi_6_jam"
+                        android:textColor="#7A7E86"
+                        android:textSize="14sp" />
                 </LinearLayout>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -295,8 +360,9 @@
             android:id="@+id/cvMobileProg"
             android:layout_width="match_parent"
             android:layout_height="102dp"
+            android:layout_marginTop="10dp"
             android:clickable="true"
-            android:layout_marginTop="10dp">
+            android:focusable="true">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -308,6 +374,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
+                    android:contentDescription="@null"
                     android:src="@drawable/mobile_prog" />
 
                 <LinearLayout
@@ -319,23 +386,45 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppinsmedium"
                         android:padding="5dp"
-                        android:text="Mobile Programming"
-                        android:textSize="20dp" />
+                        android:text="@string/mobile_programming"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
 
-                    <TextView
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="5dp"
-                        android:text="200k / Month"
-                        android:textSize="14dp" />
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:padding="5dp"
+                            android:text="@string/_200k_month"
+                            android:textColor="#5843BE"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinslight"
+                            android:padding="5dp"
+                            android:text="@string/month"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppinslight"
                         android:padding="5dp"
-                        android:text="10 sesi - 1 bulan - 20jam"
-                        android:textSize="14dp"/>
+                        android:text="@string/_10_sesi_1_bulan_20jam"
+                        android:textColor="#7A7E86"
+                        android:textSize="14sp" />
                 </LinearLayout>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -344,20 +433,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="24dp"
             android:fontFamily="@font/poppinsregular"
-            android:layout_marginTop="30dp"
             android:text="@string/special_package"
-            android:textSize="16sp"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black"
+            android:textSize="16sp" />
 
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cvComkids"
             android:layout_width="match_parent"
             android:layout_height="102dp"
+            android:layout_marginTop="15dp"
             android:clickable="true"
-            android:layout_marginTop="15dp">
+            android:focusable="true">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -370,6 +460,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
+                    android:contentDescription="@null"
                     android:src="@drawable/comkid" />
 
                 <LinearLayout
@@ -381,16 +472,20 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppinsmedium"
                         android:padding="5dp"
-                        android:text="Computer for Kids"
-                        android:textSize="20dp" />
+                        android:text="@string/computer_for_kids"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppinslight"
                         android:padding="5dp"
-                        android:text="Updated"
-                        android:textSize="14dp" />
+                        android:text="@string/updated"
+                        android:textColor="#7A7E86"
+                        android:textSize="14sp" />
 
                 </LinearLayout>
             </LinearLayout>
@@ -400,8 +495,9 @@
             android:id="@+id/cvSpraKul"
             android:layout_width="match_parent"
             android:layout_height="102dp"
+            android:layout_marginTop="10dp"
             android:clickable="true"
-            android:layout_marginTop="10dp">
+            android:focusable="true">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -414,6 +510,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
+                    android:contentDescription="@null"
                     android:src="@drawable/penkul" />
 
                 <LinearLayout
@@ -425,16 +522,20 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppinsmedium"
                         android:padding="5dp"
-                        android:text="Pra Kuliah"
-                        android:textSize="20dp" />
+                        android:text="@string/pra_kuliah"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppinslight"
                         android:padding="5dp"
-                        android:text="Updated"
-                        android:textSize="14dp" />
+                        android:text="@string/updated"
+                        android:textColor="#7A7E86"
+                        android:textSize="14sp" />
 
                 </LinearLayout>
             </LinearLayout>
@@ -444,8 +545,9 @@
             android:id="@+id/cvSprapen"
             android:layout_width="match_parent"
             android:layout_height="102dp"
+            android:layout_marginTop="10dp"
             android:clickable="true"
-            android:layout_marginTop="10dp">
+            android:focusable="true">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -458,6 +560,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
+                    android:contentDescription="@null"
                     android:src="@drawable/penpen" />
 
                 <LinearLayout
@@ -469,16 +572,20 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppinsmedium"
                         android:padding="5dp"
-                        android:text="Pra Pendadaran"
-                        android:textSize="20dp" />
+                        android:text="@string/pra_pendadaran"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppinslight"
                         android:padding="5dp"
-                        android:text="Updated"
-                        android:textSize="14dp" />
+                        android:text="@string/updated"
+                        android:textColor="#7A7E86"
+                        android:textSize="14sp" />
 
                 </LinearLayout>
             </LinearLayout>

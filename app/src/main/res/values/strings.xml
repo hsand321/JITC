@@ -14,4 +14,14 @@
     <string name="category">Category</string>
     <string name="popular_training">Popular Training</string>
     <string name="special_package">Special Package</string>
+    <string name="pra_kuliah">Pra kuliah</string>
+    <string name="_200k_month">200k</string>
+    <string name="_100k_month">100k</string>
+    <string name="_3_sesi_6_jam">3 sesi - 6 jam</string>
+    <string name="mobile_programming">Mobile Programming</string>
+    <string name="_10_sesi_1_bulan_20jam">10 sesi - 1 bulan - 20jam</string>
+    <string name="computer_for_kids">Computer for Kids</string>
+    <string name="pra_pendadaran">Pra Pendadaran</string>
+    <string name="updated">Updated 2021</string>
+    <string name="month">/ month</string>
 </resources>

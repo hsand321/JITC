@@ -25,7 +25,7 @@ public class DatabaseActivity extends AppCompatActivity {
 
         final CollapsingToolbarLayout collapsingToolbarLayout = findViewById(R.id.collapsingToolbar);
 
-        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.web);
+        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.database);
         Palette.from(bitmap).generate(palette -> {
             if (palette !=null){
                 collapsingToolbarLayout.setContentScrimColor(palette.getMutedColor(R.attr.colorPrimary));

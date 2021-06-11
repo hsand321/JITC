@@ -38,7 +38,7 @@
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?actionBarSize"
-                android:background="@color/colorOffice"
+                android:background="@color/colorOffice1"
                 android:contentDescription="@string/office"
                 app:contentInsetStart="0dp"
                 app:contentInsetStartWithNavigation="0dp"

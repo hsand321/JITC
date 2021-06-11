@@ -21,6 +21,7 @@
         <activity android:name=".OfficeActivity" />
         <activity android:name=".DesainGrafisActivity"/>
         <activity android:name=".WebActivity"/>
+        <activity android:name=".DatabaseActivity"/>
     </application>
 
 </manifest>

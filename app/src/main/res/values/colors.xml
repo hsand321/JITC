@@ -10,8 +10,13 @@
     <color name="colorPrimary">#273DFF</color>
     <color name="colorPrimaryDark">#5843BE</color>
     <color name="colorOffice">#ec3c01</color>
+    <color name="colorOffice1">#80EC3C01</color>
     <color name="colorDesainGrafis">#212121</color>
+    <color name="colorDesainGrafis1">#80212121</color>
     <color name="colorweb">#313131</color>
+    <color name="colorweb1">#80313131</color>
+    <color name="colorDatabase">#8E959B</color>
+    <color name="colorDatabase1">#801E2327</color>
     <color name="colorTint">#212121</color>
     <color name="colorDarkSemiTransparent">#000000</color>
 </resources>

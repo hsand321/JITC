@@ -53,5 +53,6 @@
     <string name="detail_web8">Dapat memahami dan menguasai XML (eXtensible Markup Language)untuk format pertukaran data di internet</string>
     <string name="detail_web7">Dapat menguasai teknik pemrograman AJAX (Asyncronous Javascript and XML) dalam membuat aplikasi berbasis web yang interaktif</string>
     <string name="detail_web6">Dapat menggunakan Javascript untuk pemrograman client side script dalam aplikasi berbasis web</string>
+    <string name="detail_database">Database atau basis data adalah kumpulan data yang dikelola sedemikian rupa berdasarkan ketentuan tertentu yang saling berhubungan sehingga mudah dalam pengelolaannya. Melalui pengelolaan tersebut pengguna dapat memperoleh kemudahan dalam mencari informasi, menyimpan informasi dan membuang informasi.</string>
 
 </resources>

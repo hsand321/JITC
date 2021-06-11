@@ -27,12 +27,9 @@ public class DesainGrafisActivity extends AppCompatActivity {
         final CollapsingToolbarLayout collapsingToolbarLayout = findViewById(R.id.collapsingToolbar);
 
         Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.desain_grafis);
-        Palette.from(bitmap).generate(new Palette.PaletteAsyncListener() {
-            @Override
-            public void onGenerated(@Nullable Palette palette) {
-                if (palette !=null){
-                    collapsingToolbarLayout.setContentScrimColor(palette.getMutedColor(R.attr.colorPrimary));
-                }
+        Palette.from(bitmap).generate(palette -> {
+            if (palette !=null){
+                collapsingToolbarLayout.setContentScrimColor(palette.getMutedColor(R.attr.colorPrimary));
             }
         });
     }

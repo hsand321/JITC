@@ -61,7 +61,7 @@
                     android:focusable="true"
                     app:cardCornerRadius="20dp">
 
-                    <ImageView
+                    <ImageButton
                         android:id="@+id/office"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -78,7 +78,7 @@
                     android:focusable="true"
                     app:cardCornerRadius="20dp">
 
-                    <ImageView
+                    <ImageButton
                         android:id="@+id/database"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -95,7 +95,7 @@
                     android:focusable="true"
                     app:cardCornerRadius="20dp">
 
-                    <ImageView
+                    <ImageButton
                         android:id="@+id/desain_grafis"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -112,7 +112,8 @@
                     android:focusable="true"
                     app:cardCornerRadius="20dp">
 
-                    <ImageView
+                    <ImageButton
+                        android:id="@+id/web"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:contentDescription="@null"
@@ -128,7 +129,8 @@
                     android:focusable="true"
                     app:cardCornerRadius="20dp">
 
-                    <ImageView
+                    <ImageButton
+                        android:id="@+id/os"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:contentDescription="@null"
@@ -144,7 +146,7 @@
                     android:focusable="true"
                     app:cardCornerRadius="20dp">
 
-                    <ImageView
+                    <ImageButton
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:contentDescription="@null"
@@ -160,7 +162,7 @@
                     android:focusable="true"
                     app:cardCornerRadius="20dp">
 
-                    <ImageView
+                    <ImageButton
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:contentDescription="@null"
@@ -176,7 +178,7 @@
                     android:focusable="true"
                     app:cardCornerRadius="20dp">
 
-                    <ImageView
+                    <ImageButton
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:contentDescription="@null"
@@ -192,7 +194,7 @@
                     android:focusable="true"
                     app:cardCornerRadius="20dp">
 
-                    <ImageView
+                    <ImageButton
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:contentDescription="@null"
@@ -467,13 +469,13 @@
                     android:src="@drawable/comkid" />
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="180dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/poppinsmedium"
                         android:padding="5dp"
@@ -482,7 +484,7 @@
                         android:textSize="18sp" />
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/poppinslight"
                         android:padding="5dp"
@@ -491,6 +493,15 @@
                         android:textSize="14sp" />
 
                 </LinearLayout>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="65dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/icon_right" />
+
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -517,13 +528,13 @@
                     android:src="@drawable/penkul" />
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="180dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/poppinsmedium"
                         android:padding="5dp"
@@ -532,7 +543,7 @@
                         android:textSize="18sp" />
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/poppinslight"
                         android:padding="5dp"
@@ -541,6 +552,15 @@
                         android:textSize="14sp" />
 
                 </LinearLayout>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="65dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/icon_right" />
+
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -567,13 +587,13 @@
                     android:src="@drawable/penpen" />
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="180dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/poppinsmedium"
                         android:padding="5dp"
@@ -582,7 +602,7 @@
                         android:textSize="18sp" />
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/poppinslight"
                         android:padding="5dp"
@@ -591,6 +611,15 @@
                         android:textSize="14sp" />
 
                 </LinearLayout>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="65dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/icon_right" />
+
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 

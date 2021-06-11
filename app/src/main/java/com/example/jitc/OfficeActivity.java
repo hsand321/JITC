@@ -1,6 +1,5 @@
 package com.example.jitc;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.palette.graphics.Palette;
@@ -27,12 +26,9 @@ public class OfficeActivity extends AppCompatActivity {
         final CollapsingToolbarLayout collapsingToolbarLayout = findViewById(R.id.collapsingToolbar);
 
         Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.office);
-        Palette.from(bitmap).generate(new Palette.PaletteAsyncListener() {
-            @Override
-            public void onGenerated(@Nullable Palette palette) {
-                if (palette !=null){
-                    collapsingToolbarLayout.setContentScrimColor(palette.getMutedColor(R.attr.colorPrimary));
-                }
+        Palette.from(bitmap).generate(palette -> {
+            if (palette !=null){
+                collapsingToolbarLayout.setContentScrimColor(palette.getMutedColor(R.attr.colorPrimary));
             }
         });
 

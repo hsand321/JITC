@@ -13,7 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 public class HomeFragment extends Fragment {
-    ImageView database, office;
+    ImageView database, office, desain_grafis;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -27,12 +27,17 @@ public class HomeFragment extends Fragment {
 
         database = view.findViewById(R.id.database);
         office = view.findViewById(R.id.office);
+        desain_grafis = view.findViewById(R.id.desain_grafis);
 //        database.setOnClickListener(v -> {
 //            Intent intent = new Intent(getActivity(), DatabaseActivity.class);
 //            startActivity(intent);
 //        });
         office.setOnClickListener(v -> {
             Intent intent = new Intent(getActivity(), OfficeActivity.class);
+            startActivity(intent);
+        });
+        desain_grafis.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), DesainGrafisActivity.class);
             startActivity(intent);
         });
     }

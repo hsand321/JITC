@@ -34,5 +34,11 @@
     <string name="detail_office1">Dapat menggunakan Microsoft Word untuk word processing dalam berbagai tujuan.</string>
     <string name="detail_office2">Dapat menggunakan Microsoft Excel untuk spreadsheet dalam berbagai tujuan.</string>
     <string name="detail_office3">Dapat membuat berbagai bentuk digital presentation dengan Microsft Powerpoint.</string>
+    <string name="detail_desaingrafis">Pengertian desain grafis adalah kegiatan kreatif untuk menciptakan karya yang fungsional dan estetis untuk berbagai jenis media yang proses komunikasinya tidak hanya mengandalkan teks, namun justru cenderung lebih banyak menggunakan unsur visual.</string>
+    <string name="detail_desaingrafis1">Dapat menggunakan aplikasi Corel Draw untuk desain grafis 2D</string>
+    <string name="detail_desaingrafis2">Dapat menggunakan aplikasi Adobe Photoshop untuk 2D image processing</string>
+    <string name="detail_desaingrafis3">Dapat menguasai berbagai macam teknik pengolahan foto digital</string>
+    <string name="detail_desaingrafis4">Dapat menguasai berbagai teknik pembuatan logo untuk berbagai tujuan .</string>
+    <string name="detail_desaingrafis5">Dapat menuangkan teknik pembuatan komik secara manual ke dalam format digital</string>
 
 </resources>

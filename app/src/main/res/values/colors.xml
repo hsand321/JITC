@@ -7,8 +7,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="colorPrimaryDark">#273DFF</color>
-    <color name="colorPrimary">#ec3c01</color>
+    <color name="colorPrimary">#273DFF</color>
+    <color name="colorPrimaryDark">#5843BE</color>
+    <color name="colorOffice">#ec3c01</color>
+    <color name="colorDesainGrafis">#212121</color>
     <color name="colorTint">#212121</color>
     <color name="colorDarkSemiTransparent">#000000</color>
 </resources>

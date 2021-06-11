@@ -34,11 +34,24 @@
     <string name="detail_office1">Dapat menggunakan Microsoft Word untuk word processing dalam berbagai tujuan.</string>
     <string name="detail_office2">Dapat menggunakan Microsoft Excel untuk spreadsheet dalam berbagai tujuan.</string>
     <string name="detail_office3">Dapat membuat berbagai bentuk digital presentation dengan Microsft Powerpoint.</string>
+    <!-- String grafis. -->
     <string name="detail_desaingrafis">Pengertian desain grafis adalah kegiatan kreatif untuk menciptakan karya yang fungsional dan estetis untuk berbagai jenis media yang proses komunikasinya tidak hanya mengandalkan teks, namun justru cenderung lebih banyak menggunakan unsur visual.</string>
     <string name="detail_desaingrafis1">Dapat menggunakan aplikasi Corel Draw untuk desain grafis 2D</string>
     <string name="detail_desaingrafis2">Dapat menggunakan aplikasi Adobe Photoshop untuk 2D image processing</string>
     <string name="detail_desaingrafis3">Dapat menguasai berbagai macam teknik pengolahan foto digital</string>
     <string name="detail_desaingrafis4">Dapat menguasai berbagai teknik pembuatan logo untuk berbagai tujuan .</string>
     <string name="detail_desaingrafis5">Dapat menuangkan teknik pembuatan komik secara manual ke dalam format digital</string>
+    <!-- String web. -->
+    <string name="detail_web">Website adalah sebuah kumpulan halaman pada suatu domain di internet yang dibuat dengan tujuan tertentu dan saling berhubungan serta dapat diakses secara luas melalui halaman depan (home page) menggunakan sebuah browser menggunakan URL website.</string>
+    <string name="detail_web1">Dapat menguasai HTML sebagai dasar pembuatan desain halaman web</string>
+    <string name="detail_web2">Dapat menguasai teknik desain dan layout halaman web dengan CSS</string>
+    <string name="detail_web3">Dapat menguasai pemrograman server side script dengan PHP untuk aplikasi berbasis web</string>
+    <string name="detail_web4">Dapat menguasai teknik pemrograman grafik dalam PHP</string>
+    <string name="detail_web5">Dapat membuat aplikasi berbasis web dengan server side script menggunakan ASP</string>
+    <string name="detail_web10">Dapat menggunakan berbagai macam CMS (Content Management System) untuk membuat web site secara mudah dan cepat tanpa harus menguasai pemrograman web</string>
+    <string name="detail_web9">Dapat menguasai teknik pembuatan grafik berbasis vektor dengan SVG sebagai alternatif Macromedia Flash</string>
+    <string name="detail_web8">Dapat memahami dan menguasai XML (eXtensible Markup Language)untuk format pertukaran data di internet</string>
+    <string name="detail_web7">Dapat menguasai teknik pemrograman AJAX (Asyncronous Javascript and XML) dalam membuat aplikasi berbasis web yang interaktif</string>
+    <string name="detail_web6">Dapat menggunakan Javascript untuk pemrograman client side script dalam aplikasi berbasis web</string>
 
 </resources>

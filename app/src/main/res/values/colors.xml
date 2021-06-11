@@ -11,6 +11,7 @@
     <color name="colorPrimaryDark">#5843BE</color>
     <color name="colorOffice">#ec3c01</color>
     <color name="colorDesainGrafis">#212121</color>
+    <color name="colorweb">#313131</color>
     <color name="colorTint">#212121</color>
     <color name="colorDarkSemiTransparent">#000000</color>
 </resources>

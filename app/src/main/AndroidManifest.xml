@@ -19,9 +19,15 @@
         </activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".OfficeActivity" />
-        <activity android:name=".DesainGrafisActivity"/>
-        <activity android:name=".WebActivity"/>
-        <activity android:name=".DatabaseActivity"/>
+        <activity android:name=".DesainGrafisActivity" />
+        <activity android:name=".WebActivity" />
+        <activity android:name=".DatabaseActivity" />
+        <activity android:name=".OsNetworkActivity" />
+        <activity android:name=".PemogramanActivity" />
+        <activity android:name=".MultimediaActivity" />
+        <activity android:name=".ModellingActivity" />
+        <activity android:name=".RequestActivity"/>
+
     </application>
 
 </manifest>

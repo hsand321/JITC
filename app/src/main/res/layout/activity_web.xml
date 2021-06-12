@@ -22,12 +22,12 @@
             android:fitsSystemWindows="true"
             app:contentScrim="@color/colorweb"
             app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
-            app:title="Web">
+            app:title="@string/web">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:contentDescription="web"
+                android:contentDescription="@string/web"
                 android:fitsSystemWindows="true"
                 android:scaleType="centerCrop"
                 android:src="@drawable/bg_web"
@@ -38,7 +38,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="?actionBarSize"
                 android:background="@color/colorweb1"
-                android:contentDescription="@string/office"
+                android:contentDescription="@string/web"
                 app:contentInsetStart="0dp"
                 app:contentInsetStartWithNavigation="0dp"
                 app:layout_collapseMode="pin"

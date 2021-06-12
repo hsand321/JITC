@@ -22,12 +22,12 @@
             android:fitsSystemWindows="true"
             app:contentScrim="@color/colorDatabase"
             app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
-            app:title="Desain Grafis">
+            app:title="@string/Database">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:contentDescription="@string/office"
+                android:contentDescription="@string/Database"
                 android:fitsSystemWindows="true"
                 android:scaleType="centerCrop"
                 android:src="@drawable/db"
@@ -38,7 +38,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="?actionBarSize"
                 android:background="@color/colorDatabase1"
-                android:contentDescription="@string/office"
+                android:contentDescription="@string/Database"
                 app:contentInsetStart="0dp"
                 app:contentInsetStartWithNavigation="0dp"
                 app:layout_collapseMode="pin"
@@ -88,7 +88,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10sp"
-                android:text="@string/detail_desaingrafis1"
+                android:text="@string/detail_database1"
                 android:textSize="16sp" />
 
             <ImageView
@@ -101,7 +101,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10sp"
-                android:text="@string/detail_desaingrafis2"
+                android:text="@string/detail_database2"
                 android:textSize="16sp" />
 
             <ImageView
@@ -114,7 +114,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10sp"
-                android:text="@string/detail_desaingrafis3"
+                android:text="@string/detail_database3"
                 android:textSize="16sp" />
 
             <ImageView
@@ -127,7 +127,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10sp"
-                android:text="@string/detail_desaingrafis4"
+                android:text="@string/detail_database4"
                 android:textSize="16sp" />
 
             <ImageView
@@ -140,11 +140,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10sp"
-                android:text="@string/detail_desaingrafis5"
+                android:text="@string/detail_database5"
                 android:textSize="16sp" />
 
             <ImageButton
-                android:id="@+id/btn_booking3"
+                android:id="@+id/btn_booking2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"

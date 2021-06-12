@@ -130,7 +130,7 @@
                     app:cardCornerRadius="20dp">
 
                     <ImageButton
-                        android:id="@+id/os"
+                        android:id="@+id/network"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:contentDescription="@null"
@@ -147,6 +147,7 @@
                     app:cardCornerRadius="20dp">
 
                     <ImageButton
+                        android:id="@+id/program"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:contentDescription="@null"
@@ -163,6 +164,7 @@
                     app:cardCornerRadius="20dp">
 
                     <ImageButton
+                        android:id="@+id/multimedia"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:contentDescription="@null"
@@ -179,6 +181,7 @@
                     app:cardCornerRadius="20dp">
 
                     <ImageButton
+                        android:id="@+id/modelling"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:contentDescription="@null"
@@ -195,6 +198,7 @@
                     app:cardCornerRadius="20dp">
 
                     <ImageButton
+                        android:id="@+id/request"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:contentDescription="@null"

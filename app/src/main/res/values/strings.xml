@@ -26,15 +26,16 @@
     <string name="updated">Updated 2021</string>
     <string name="month">/ month</string>
     <string name="lorem">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</string>
-    <string name="office">Office</string>
     <string name="about">About</string>
     <string name="detail_training">Detail Training</string>
     <!-- String office. -->
+    <string name="office">Office</string>
     <string name="detail_office">Microsoft Office merupakan salah satu perangkat lunak paket aplikasi perkantoran buatan dari Microsoft dan didesain untuk dijalankan di bawah sistem operasi Linux, Mac OS X dan Microsoft Windows. Beberapa aplikasi atau bagian di dalam Microsoft Office yang sudah populer adalah Ms Excel, Ms Word, dan Ms Powerpoint.</string>
     <string name="detail_office1">Dapat menggunakan Microsoft Word untuk word processing dalam berbagai tujuan.</string>
     <string name="detail_office2">Dapat menggunakan Microsoft Excel untuk spreadsheet dalam berbagai tujuan.</string>
     <string name="detail_office3">Dapat membuat berbagai bentuk digital presentation dengan Microsft Powerpoint.</string>
     <!-- String grafis. -->
+    <string name="desaingrafis">Desain Grafis</string>
     <string name="detail_desaingrafis">Pengertian desain grafis adalah kegiatan kreatif untuk menciptakan karya yang fungsional dan estetis untuk berbagai jenis media yang proses komunikasinya tidak hanya mengandalkan teks, namun justru cenderung lebih banyak menggunakan unsur visual.</string>
     <string name="detail_desaingrafis1">Dapat menggunakan aplikasi Corel Draw untuk desain grafis 2D</string>
     <string name="detail_desaingrafis2">Dapat menggunakan aplikasi Adobe Photoshop untuk 2D image processing</string>
@@ -42,6 +43,7 @@
     <string name="detail_desaingrafis4">Dapat menguasai berbagai teknik pembuatan logo untuk berbagai tujuan .</string>
     <string name="detail_desaingrafis5">Dapat menuangkan teknik pembuatan komik secara manual ke dalam format digital</string>
     <!-- String web. -->
+    <string name="web">Web</string>
     <string name="detail_web">Website adalah sebuah kumpulan halaman pada suatu domain di internet yang dibuat dengan tujuan tertentu dan saling berhubungan serta dapat diakses secara luas melalui halaman depan (home page) menggunakan sebuah browser menggunakan URL website.</string>
     <string name="detail_web1">Dapat menguasai HTML sebagai dasar pembuatan desain halaman web</string>
     <string name="detail_web2">Dapat menguasai teknik desain dan layout halaman web dengan CSS</string>
@@ -53,6 +55,45 @@
     <string name="detail_web8">Dapat memahami dan menguasai XML (eXtensible Markup Language)untuk format pertukaran data di internet</string>
     <string name="detail_web7">Dapat menguasai teknik pemrograman AJAX (Asyncronous Javascript and XML) dalam membuat aplikasi berbasis web yang interaktif</string>
     <string name="detail_web6">Dapat menggunakan Javascript untuk pemrograman client side script dalam aplikasi berbasis web</string>
+    <!-- String Database. -->
+    <string name="Database">Database</string>
     <string name="detail_database">Database atau basis data adalah kumpulan data yang dikelola sedemikian rupa berdasarkan ketentuan tertentu yang saling berhubungan sehingga mudah dalam pengelolaannya. Melalui pengelolaan tersebut pengguna dapat memperoleh kemudahan dalam mencari informasi, menyimpan informasi dan membuang informasi.</string>
+    <string name="detail_database1">Dapat menggunakan MySQL 5 beserta fitur – fitur barunya.</string>
+    <string name="detail_database2">Dapat melakukan administrasi database MySQL 5 ditinjau dari berbagai hal.</string>
+    <string name="detail_database3">Dapat menggunakan SQL * Plus Oracle dalam melakukan query, yang menjadi dasar persiapan sertifikasi.</string>
+    <string name="detail_database4">Dapat menggunakan aplikasi Microsoft Access untuk mengelola database untuk kebutuhan skala kecil</string>
+    <string name="detail_database5">Dapat menggunakan berbagai fitur Microsoft SQL Server dalam pengelolaan database skala besar.</string>
+    <!-- String OS dan networking. -->
+    <string name="os">OS &amp; Networking</string>
+    <string name="detail_os">Network atau jaringan adalah Sekelompok komputer yang terhubung yang bisa saling berbagi sumber daya (seperti printer atau modem) dan data.sistem operasi adalah software yang dipasangkan pada hard drive sebuah komputer, sehingga hardware dapat “berkomunikasi” dan bekerja dengan software di dalam perangkat</string>
+    <string name="detail_os1">Dapat melakukan berbagai macam manajemen service dalam Windows 2003 Server</string>
+    <string name="detail_os2">Dapat menggunakan Linux sebagai sistem operasi alternatif Microsoft Windows</string>
+    <string name="detail_os3">Dapat melakukan administrasi jaringan pada server yang berbasis Linux</string>
+    <string name="detail_os4">Dapat melakukan instalasi jaringan WiFi dalam waktu yang cepat</string>
+    <string name="detail_os5">Dapat melakukan instalasi jaringan secara lengkap dari hardware sampai konfigurasi secara software untuk skala SOHO</string>
+    <!-- String pemrograman. -->
+    <string name="pemrograman">Pemrograman</string>
+    <string name="detail_pemrograman">Programming adalah sebuah proses seseorang menulis, memperbaiki, menguji, dan memelihara kode-kode dalam membuat sebuah program komputer. Dalam program training ini terdapat 4 paket yang disediakan.</string>
+    <string name="detail_pemrograman1">Dapat menguasai teknik pemrograman .NET Framework dengan Visual Basic untuk berbagai keperluan</string>
+    <string name="detail_pemrograman2">Dapat menguasai teknik pemrograman .NET Framework dengan C# untuk berbagai keperluan</string>
+    <string name="detail_pemrograman3">Dapat menguasai pemrograman visual dengan Delphi untuk berbagai keperluan</string>
+    <string name="detail_pemrograman4">Dapat menguasai pemrograman Java untuk lingkungan desktop maupun internet</string>
+    <!-- String Multimedia. -->
+    <string name="multimedia">Multimedia</string>
+    <string name="detail_multimedia">multimedia adalah salah satu sarana media komunikasi dan informasi pada komputer yang mengkombinasikan antara grafik, teks, animasi, audio, dan video. Kombinasi dari berbagai elemen ini dapat ditampilkan, disimpan, dikirim, maupun diproses dengan perangkat tertentu</string>
+    <string name="detail_multimedia1">Dapat menguasai teknik pembuatan animasi menggunakan Macromedia Flash MX</string>
+    <string name="detail_multimedia2">Dapat menguasai teknik pembuatan desktop animation dengan Macromedia Director MX</string>
+    <string name="detail_multimedia3">Dapat menguasai teknik pembuatan game dengan Macromedia Flash MX untuk web maupun desktop</string>
+    <string name="detail_multimedia4">Dapat membuat presentasi multimedia yang lebih menarik menggunakan Macromedia Director MX</string>
+    <!-- String Modelling. -->
+    <string name="modelling">3D &amp; Modelling</string>
+    <string name="detail_modelling">3D Modelling adalah proses untuk menciptakan objek 3D yang ingin dituangkan dalam bentuk visual nyata, baik secara bentuk, tekstur, dan ukuran objeknya, Pada training ini, terdapat 2 paket yang disediakan.</string>
+    <string name="detail_modelling1">Dapat menggunakan Auto CAD untuk keperluan pembuatan desain model</string>
+    <string name="detail_modelling2">Dapat membuat permodelan objek secara 3 dimensi untuk berbagai keperluan</string>
+    <!-- String Modelling. -->
+    <string name="request">by Request</string>
+    <string name="detail_request">Calon pelanggan dapat melakukan request/permintaan kepada admin berkaitan dengan IT dan software dan konsultasi unutk mengetahui dasar-dasar informatika secara praktis di lapangan sampai basic knowledges pada ujian pendadaran</string>
+    <string name="detail_request1">Dapat membuat aplikasi GIS / Mapping berbasis web untuk berbagai keperluan</string>
+    <string name="detail_request2">Dapat membuat aplikasi untuk perangkat bergerak dengan Java 2 Micro Edition dan Android Studio</string>
 
 </resources>

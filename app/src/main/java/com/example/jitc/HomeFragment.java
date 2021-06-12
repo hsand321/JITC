@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import androidx.fragment.app.Fragment;
 
 public class HomeFragment extends Fragment {
-    ImageView database, office, desain_grafis, web;
+    ImageView database, office, desain_grafis, web, network, pemograman, multimedia, modelling, request;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -26,6 +26,11 @@ public class HomeFragment extends Fragment {
         office = view.findViewById(R.id.office);
         desain_grafis = view.findViewById(R.id.desain_grafis);
         web = view.findViewById(R.id.web);
+        network = view.findViewById(R.id.network);
+        pemograman = view.findViewById(R.id.program);
+        multimedia = view.findViewById(R.id.multimedia);
+        modelling = view.findViewById(R.id.modelling);
+        request = view.findViewById(R.id.request);
 
         database.setOnClickListener(v -> {
             Intent intent = new Intent(getActivity(), DatabaseActivity.class);
@@ -41,6 +46,26 @@ public class HomeFragment extends Fragment {
         });
         web.setOnClickListener(v -> {
             Intent intent = new Intent(getActivity(), WebActivity.class);
+            startActivity(intent);
+        });
+        network.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), OsNetworkActivity.class);
+            startActivity(intent);
+        });
+        pemograman.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), PemogramanActivity.class);
+            startActivity(intent);
+        });
+        multimedia.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), MultimediaActivity.class);
+            startActivity(intent);
+        });
+        modelling.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), ModellingActivity.class);
+            startActivity(intent);
+        });
+        request.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), RequestActivity.class);
             startActivity(intent);
         });
     }

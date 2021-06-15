@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorweb"
     android:fitsSystemWindows="true"
-    tools:context=".WebActivity">
+    tools:context=".ui.WebActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/AppbarLayout"

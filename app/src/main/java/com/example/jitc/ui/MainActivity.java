@@ -1,4 +1,4 @@
-package com.example.jitc;
+package com.example.jitc.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -9,6 +9,9 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.WindowManager;
 
+import com.example.jitc.AboutFragment;
+import com.example.jitc.HomeFragment;
+import com.example.jitc.R;
 import com.ismaeldivita.chipnavigation.ChipNavigationBar;
 
 import static androidx.constraintlayout.motion.utils.Oscillator.TAG;

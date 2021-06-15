@@ -9,6 +9,16 @@ import android.widget.ImageView;
 
 import androidx.fragment.app.Fragment;
 
+import com.example.jitc.ui.DatabaseActivity;
+import com.example.jitc.ui.DesainGrafisActivity;
+import com.example.jitc.ui.ModellingActivity;
+import com.example.jitc.ui.MultimediaActivity;
+import com.example.jitc.ui.OfficeActivity;
+import com.example.jitc.ui.OsNetworkActivity;
+import com.example.jitc.ui.PemogramanActivity;
+import com.example.jitc.ui.RequestActivity;
+import com.example.jitc.ui.WebActivity;
+
 public class HomeFragment extends Fragment {
     ImageView database, office, desain_grafis, web, network, pemograman, multimedia, modelling, request;
 

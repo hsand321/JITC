@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.WindowManager;
 import android.widget.ImageButton;
 
+import com.example.jitc.ui.MainActivity;
+
 public class GetStartedActivity extends AppCompatActivity {
 
     ImageButton imageButton;

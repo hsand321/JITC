@@ -1,4 +1,4 @@
-package com.example.jitc;
+package com.example.jitc.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -8,6 +8,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 
+import com.example.jitc.R;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 
 import java.util.Objects;

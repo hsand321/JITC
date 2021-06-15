@@ -17,16 +17,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
-        <activity android:name=".OfficeActivity" />
-        <activity android:name=".DesainGrafisActivity" />
-        <activity android:name=".WebActivity" />
-        <activity android:name=".DatabaseActivity" />
-        <activity android:name=".OsNetworkActivity" />
-        <activity android:name=".PemogramanActivity" />
-        <activity android:name=".MultimediaActivity" />
-        <activity android:name=".ModellingActivity" />
-        <activity android:name=".RequestActivity"/>
+        <activity android:name=".ui.MainActivity" />
+        <activity android:name=".ui.OfficeActivity" />
+        <activity android:name=".ui.DesainGrafisActivity" />
+        <activity android:name=".ui.WebActivity" />
+        <activity android:name=".ui.DatabaseActivity" />
+        <activity android:name=".ui.OsNetworkActivity" />
+        <activity android:name=".ui.PemogramanActivity" />
+        <activity android:name=".ui.MultimediaActivity" />
+        <activity android:name=".ui.ModellingActivity" />
+        <activity android:name=".ui.RequestActivity"/>
 
     </application>
 

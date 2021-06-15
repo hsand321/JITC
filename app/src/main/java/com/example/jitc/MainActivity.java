@@ -1,4 +1,4 @@
-package com.example.jitc.ui;
+package com.example.jitc;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;

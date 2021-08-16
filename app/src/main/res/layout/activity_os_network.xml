@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/black"
     android:fitsSystemWindows="true"
-    tools:context=".ui.OsNetworkActivity">
+    tools:context=".Course.OsNetworkActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/AppbarLayout"

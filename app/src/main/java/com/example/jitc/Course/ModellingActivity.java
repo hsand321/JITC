@@ -1,4 +1,4 @@
-package com.example.jitc.ui;
+package com.example.jitc.Course;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;

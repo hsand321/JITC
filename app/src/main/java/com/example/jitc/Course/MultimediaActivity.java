@@ -1,4 +1,4 @@
-package com.example.jitc.ui;
+package com.example.jitc.Course;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -13,12 +13,12 @@ import com.google.android.material.appbar.CollapsingToolbarLayout;
 
 import java.util.Objects;
 
-public class WebActivity extends AppCompatActivity {
+public class MultimediaActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_web);
+        setContentView(R.layout.activity_multimedia);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -26,7 +26,7 @@ public class WebActivity extends AppCompatActivity {
 
         final CollapsingToolbarLayout collapsingToolbarLayout = findViewById(R.id.collapsingToolbar);
 
-        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.web);
+        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.multimedia);
         Palette.from(bitmap).generate(palette -> {
             if (palette !=null){
                 collapsingToolbarLayout.setContentScrimColor(palette.getMutedColor(R.attr.colorPrimary));

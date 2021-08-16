@@ -3,7 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cnb_unselectedColor="#fff">
 
-
     <item
         android:id="@+id/nav_home"
         android:icon="@drawable/ic_home"
@@ -11,6 +10,22 @@
         app:cnb_iconColor="#fff"
         app:cnb_textColor="#fff"
         android:title="Home" />
+
+    <item
+        android:id="@+id/nav_video"
+        android:icon="@drawable/ic_video"
+        android:title="Video"
+        app:cnb_backgroundColor="#FFD600"
+        app:cnb_iconColor="#ffffff"
+        app:cnb_textColor="#ffffff" />
+
+    <item
+        android:id="@+id/nav_pendaftaran"
+        android:icon="@drawable/ic_pendaftaran"
+        android:title="Pendaftaran"
+        app:cnb_backgroundColor="#FFD600"
+        app:cnb_iconColor="#ffffff"
+        app:cnb_textColor="#ffffff" />
 
     <item
         android:id="@+id/nav_about"

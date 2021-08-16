@@ -1,4 +1,4 @@
-package com.example.jitc;
+package com.example.jitc.Fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,17 +9,19 @@ import android.widget.ImageView;
 
 import androidx.fragment.app.Fragment;
 
-import com.example.jitc.ui.DatabaseActivity;
-import com.example.jitc.ui.DesainGrafisActivity;
-import com.example.jitc.ui.ModellingActivity;
-import com.example.jitc.ui.MultimediaActivity;
-import com.example.jitc.ui.OfficeActivity;
-import com.example.jitc.ui.OsNetworkActivity;
-import com.example.jitc.ui.PemogramanActivity;
-import com.example.jitc.ui.RequestActivity;
-import com.example.jitc.ui.WebActivity;
+import com.example.jitc.R;
+import com.example.jitc.Course.DatabaseActivity;
+import com.example.jitc.Course.DesainGrafisActivity;
+import com.example.jitc.Course.ModellingActivity;
+import com.example.jitc.Course.MultimediaActivity;
+import com.example.jitc.Course.OfficeActivity;
+import com.example.jitc.Course.OsNetworkActivity;
+import com.example.jitc.Course.PemogramanActivity;
+import com.example.jitc.Course.RequestActivity;
+import com.example.jitc.Course.WebActivity;
 
 public class HomeFragment extends Fragment {
+
     ImageView database, office, desain_grafis, web, network, pemograman, multimedia, modelling, request;
 
     @Override

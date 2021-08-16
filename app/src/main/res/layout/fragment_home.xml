@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeFragment">
+    tools:context=".Fragment.HomeFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -215,228 +215,19 @@
             android:layout_marginTop="30dp"
             android:layout_marginEnd="24dp"
             android:fontFamily="@font/poppinsregular"
-            android:text="@string/popular_training"
+            android:text="Available Training"
             android:textColor="@color/black"
             android:textSize="16sp" />
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cvPraKuliah"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvEbook"
             android:layout_width="match_parent"
-            android:layout_height="102dp"
-            android:layout_marginTop="15dp"
-            android:clickable="true"
-            android:focusable="true">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="20dp"
-                    android:contentDescription="@null"
-                    android:src="@drawable/pra_kuliah" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppinsmedium"
-                        android:padding="5dp"
-                        android:text="@string/pra_kuliah"
-                        android:textColor="@color/black"
-                        android:textSize="16sp" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/poppinsmedium"
-                            android:padding="5dp"
-                            android:text="@string/_200k_month"
-                            android:textColor="#5843BE"
-                            android:textSize="16sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/poppinslight"
-                            android:padding="5dp"
-                            android:text="@string/month"
-                            android:textSize="16sp" />
-
-                    </LinearLayout>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppinslight"
-                        android:padding="5dp"
-                        android:text="@string/_10_sesi_1_bulan_20jam"
-                        android:textColor="#7A7E86"
-                        android:textSize="14sp" />
-                </LinearLayout>
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cvPraPendadaran"
-            android:layout_width="match_parent"
-            android:layout_height="102dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:clickable="true"
-            android:focusable="true">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="20dp"
-                    android:contentDescription="@null"
-                    android:src="@drawable/pra_pendadaran" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppinsmedium"
-                        android:padding="5dp"
-                        android:text="@string/pra_pendadaran"
-                        android:textColor="@color/black"
-                        android:textSize="16sp" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/poppinsmedium"
-                            android:padding="5dp"
-                            android:text="@string/_100k_month"
-                            android:textColor="#5843BE"
-                            android:textSize="16sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/poppinslight"
-                            android:padding="5dp"
-                            android:text="@string/month"
-                            android:textSize="16sp" />
-
-                    </LinearLayout>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppinslight"
-                        android:padding="5dp"
-                        android:text="@string/_3_sesi_6_jam"
-                        android:textColor="#7A7E86"
-                        android:textSize="14sp" />
-                </LinearLayout>
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cvMobileProg"
-            android:layout_width="match_parent"
-            android:layout_height="102dp"
-            android:layout_marginTop="10dp"
-            android:clickable="true"
-            android:focusable="true">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="20dp"
-                    android:contentDescription="@null"
-                    android:src="@drawable/mobile_prog" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppinsmedium"
-                        android:padding="5dp"
-                        android:text="@string/mobile_programming"
-                        android:textColor="@color/black"
-                        android:textSize="16sp" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/poppinsmedium"
-                            android:padding="5dp"
-                            android:text="@string/_200k_month"
-                            android:textColor="#5843BE"
-                            android:textSize="16sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/poppinslight"
-                            android:padding="5dp"
-                            android:text="@string/month"
-                            android:textSize="16sp" />
-
-                    </LinearLayout>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppinslight"
-                        android:padding="5dp"
-                        android:text="@string/_10_sesi_1_bulan_20jam"
-                        android:textColor="#7A7E86"
-                        android:textSize="14sp" />
-                </LinearLayout>
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            tools:listitem="@layout/training_item_layout" />
 
         <TextView
             android:layout_width="match_parent"
@@ -626,7 +417,5 @@
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
-
-
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>

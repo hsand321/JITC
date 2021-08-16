@@ -13,7 +13,6 @@
     <string name="explore_now">EXPLORE NOW</string>
     <string name="mencari_pelatihan_yang_sesuai">Mencari pelatihan yang sesuai</string>
     <string name="category">Category</string>
-    <string name="popular_training">Popular Training</string>
     <string name="special_package">Special Package</string>
     <string name="pra_kuliah">Pra kuliah</string>
     <string name="_200k_month">200k</string>
@@ -95,5 +94,7 @@
     <string name="detail_request">Calon pelanggan dapat melakukan request/permintaan kepada admin berkaitan dengan IT dan software dan konsultasi unutk mengetahui dasar-dasar informatika secara praktis di lapangan sampai basic knowledges pada ujian pendadaran</string>
     <string name="detail_request1">Dapat membuat aplikasi GIS / Mapping berbasis web untuk berbagai keperluan</string>
     <string name="detail_request2">Dapat membuat aplikasi untuk perangkat bergerak dengan Java 2 Micro Edition dan Android Studio</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

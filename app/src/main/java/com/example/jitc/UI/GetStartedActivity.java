@@ -1,4 +1,4 @@
-package com.example.jitc;
+package com.example.jitc.UI;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.WindowManager;
 import android.widget.ImageButton;
+
+import com.example.jitc.R;
 
 public class GetStartedActivity extends AppCompatActivity {
 

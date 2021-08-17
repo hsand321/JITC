@@ -5,7 +5,7 @@ public class Video {
 
     public Video(){
 
-    }
+    };
 
     public Video(String id, String title, String timestamp, String videoUrl) {
         this.id = id;

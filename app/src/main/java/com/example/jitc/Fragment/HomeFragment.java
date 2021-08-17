@@ -6,9 +6,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
+import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.jitc.Adapter.CourseAdapter;
+import com.example.jitc.Model.UploadCourseData;
 import com.example.jitc.R;
 import com.example.jitc.Course.DatabaseActivity;
 import com.example.jitc.Course.DesainGrafisActivity;
@@ -19,16 +26,64 @@ import com.example.jitc.Course.OsNetworkActivity;
 import com.example.jitc.Course.PemogramanActivity;
 import com.example.jitc.Course.RequestActivity;
 import com.example.jitc.Course.WebActivity;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
 
 public class HomeFragment extends Fragment {
 
     ImageView database, office, desain_grafis, web, network, pemograman, multimedia, modelling, request;
+    private RecyclerView viewCourseRV;
+    private ProgressBar progressBar;
+    private ArrayList <UploadCourseData> list = new ArrayList<>();
+    private CourseAdapter adapter;
+
+    private DatabaseReference reference;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
+
+        viewCourseRV = view.findViewById(R.id.viewCourseRV);
+        progressBar = view.findViewById(R.id.progressBar);
+
+        reference = FirebaseDatabase.getInstance().getReference().child("Note");
+
+        viewCourseRV.setLayoutManager(new LinearLayoutManager(getContext()));
+        viewCourseRV.setHasFixedSize(true);
+
+        getCourse();
+        return view;
+    }
+
+    private void getCourse() {
+        reference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                list = new ArrayList<>();
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                    UploadCourseData data = snapshot.getValue(UploadCourseData.class);
+                    list.add(data);
+                }
+
+                adapter = new CourseAdapter(getActivity(), list);
+                adapter.notifyDataSetChanged();
+                progressBar.setVisibility(View.GONE);
+                viewCourseRV.setAdapter(adapter);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                progressBar.setVisibility(View.GONE);
+                Toast.makeText(getActivity(), error.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     @Override

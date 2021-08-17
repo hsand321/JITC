@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/icon_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.JITC">
+        <activity android:name=".UI.DetailCourseActivity"/>
         <activity android:name=".UI.GetStartedActivity" />
         <activity android:name=".UI.SplashActivity">
             <intent-filter>
@@ -26,8 +27,7 @@
         <activity android:name=".Course.PemogramanActivity" />
         <activity android:name=".Course.MultimediaActivity" />
         <activity android:name=".Course.ModellingActivity" />
-        <activity android:name=".Course.RequestActivity"/>
-
+        <activity android:name=".Course.RequestActivity" />
     </application>
 
 </manifest>

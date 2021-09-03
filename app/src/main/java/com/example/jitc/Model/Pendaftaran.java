@@ -1,11 +1,11 @@
 package com.example.jitc.Model;
 
 public class Pendaftaran {
-    String nama, jeniskelamin,email , nohp, asalkampus, course, image, date, time, key;
-
-    public Pendaftaran(String nama, String jeniskelamin, String email, String nohp, String asalkampus, String course, String image, String date, String time, String key) {
+    String nama, email , nohp, asalkampus, course, image, date, time, key;
+//    String jeniskelamin,
+    public Pendaftaran(String nama,  String email, String nohp, String asalkampus, String course, String image, String date, String time, String key) {
         this.nama = nama;
-        this.jeniskelamin = jeniskelamin;
+//        this.jeniskelamin = jeniskelamin;
         this.email = email;
         this.nohp = nohp;
         this.asalkampus = asalkampus;
@@ -28,13 +28,13 @@ public class Pendaftaran {
         this.nama = nama;
     }
 
-    public String getJeniskelamin() {
-        return jeniskelamin;
-    }
-
-    public void setJeniskelamin(String jeniskelamin) {
-        this.jeniskelamin = jeniskelamin;
-    }
+//    public String getJeniskelamin() {
+//        return jeniskelamin;
+//    }
+//
+//    public void setJeniskelamin(String jeniskelamin) {
+//        this.jeniskelamin = jeniskelamin;
+//    }
 
     public String getEmail() {
         return email;

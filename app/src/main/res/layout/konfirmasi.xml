@@ -4,26 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
     android:gravity="center">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
         app:cardCornerRadius="10dp">
 
         <RelativeLayout
             android:padding="20dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/warn"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+     android:layout_centerHorizontal="true"
+                android:background="@drawable/ic_warn"/>
 
             <TextView
                 android:id="@+id/textt"
+                android:layout_marginTop="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="50dp"
+                android:layout_marginBottom="30dp"
+                android:layout_below="@id/warn"
                 android:textColor="@color/black"
-                android:textSize="14sp"
+                android:textSize="16sp"
                 android:fontFamily="@font/poppinsmedium"
                 android:textAlignment="center"
                 android:layout_centerHorizontal="true"
@@ -42,7 +51,7 @@
                     android:layout_height="40dp"
                     android:layout_alignParentBottom="true"
                     android:layout_marginEnd="30dp"
-                    android:layout_marginBottom="24dp"
+                    android:layout_marginBottom="14dp"
                     android:background="@drawable/ic_sudah"
                     app:layout_constraintBottom_toBottomOf="@+id/imageView6"
                     app:layout_constraintStart_toStartOf="@+id/imageView6" />
@@ -52,7 +61,7 @@
                     android:layout_width="100dp"
                     android:layout_height="40dp"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginBottom="24dp"
+                    android:layout_marginBottom="14dp"
                     android:background="@drawable/ic_belum"
                     app:layout_constraintBottom_toBottomOf="@+id/imageView6"
                     app:layout_constraintEnd_toEndOf="@+id/imageView6"

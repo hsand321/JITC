@@ -70,43 +70,43 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:fontFamily="@font/poppinsregular"
-                android:text="Jenis Kelamin"
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/nama" />
+<!--            <TextView-->
+<!--                android:id="@+id/textView4"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="24dp"-->
+<!--                android:fontFamily="@font/poppinsregular"-->
+<!--                android:text="Jenis Kelamin"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="18sp"-->
+<!--                android:textStyle="bold"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/nama" />-->
 
-            <RadioGroup
-                android:id="@+id/jkradio"
-                android:layout_marginStart="24dp"
-                android:layout_marginEnd="24dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                app:layout_constraintTop_toBottomOf="@+id/textView4">
+<!--            <LinearLayout-->
+<!--                android:id="@+id/jkradio"-->
+<!--                android:layout_marginStart="24dp"-->
+<!--                android:layout_marginEnd="24dp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/textView4">-->
 
-                <RadioButton
-                    android:id="@+id/lakilaki"
-                    android:layout_width="wrap_content"
-                    android:text="Laki-Laki"
-                    android:fontFamily="@font/poppinsmedium"
-                    android:layout_height="wrap_content" />
-                <RadioButton
-                    android:id="@+id/perempuan"
-                    android:layout_width="wrap_content"
-                    android:text="Perempuan"
-                    android:layout_marginStart="90dp"
-                    android:fontFamily="@font/poppinsmedium"
-                    android:layout_height="wrap_content" />
-            </RadioGroup>
+<!--                <RadioButton-->
+<!--                    android:id="@+id/lakilaki"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:text="Laki-Laki"-->
+<!--                    android:fontFamily="@font/poppinsmedium"-->
+<!--                    android:layout_height="wrap_content" />-->
+<!--                <RadioButton-->
+<!--                    android:id="@+id/perempuan"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:text="Perempuan"-->
+<!--                    android:layout_marginStart="90dp"-->
+<!--                    android:fontFamily="@font/poppinsmedium"-->
+<!--                    android:layout_height="wrap_content" />-->
 
+<!--</LinearLayout>-->
             <TextView
                 android:id="@+id/textView5"
                 android:layout_width="wrap_content"
@@ -118,7 +118,7 @@
                 android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/jkradio" />
+                app:layout_constraintTop_toBottomOf="@+id/nama" />
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/email"
@@ -226,6 +226,37 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView8"
                 app:layout_constraintStart_toStartOf="parent"
             />
+            <TextView
+                android:id="@+id/keterangancourse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:fontFamily="@font/poppinsregular"
+                android:text="Keterangan"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/keterangan"
+                android:layout_width="match_parent"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_height="45dp"
+                android:background="@drawable/bg_input"
+                android:fontFamily="@font/poppinsregular"
+                android:hint="Keterangan"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.308"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/keterangancourse" />
 
             <TextView
                 android:id="@+id/textView11"
@@ -238,7 +269,7 @@
                 android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/spinner" />
+                app:layout_constraintTop_toBottomOf="@+id/keterangan" />
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/mediasosial"

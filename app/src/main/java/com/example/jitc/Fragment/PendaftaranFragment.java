@@ -49,12 +49,12 @@ import static android.app.Activity.RESULT_OK;
 public class PendaftaranFragment extends Fragment implements AdapterView.OnItemSelectedListener {
 
     private ImageView addImage, profile;
-    private EditText nama, email, nohp, asalkampus;
+    private EditText nama, email,keterangan, medsos, nohp, asalkampus;
     private ImageButton daftar;
     Pendaftaran pendaftaran;
     private Spinner spinner;
     private String item;
-    String[] training={"Pilih","Training1","Traomomg2"};
+    String[] training={"Pilih","Computer For Kids","Pra Kuliah","Intensive TA & Skripsi","Office","Mobile Programming","Web Programming","Digital Marketing","Design Grafis","By Request "};
     private RadioButton laki, perempuan;
     private final int REQ = 1;
     private Bitmap bitmap;
@@ -86,9 +86,10 @@ public class PendaftaranFragment extends Fragment implements AdapterView.OnItemS
         nama = view.findViewById(R.id.nama);
 
 
-        laki = view.findViewById(R.id.lakilaki);
-        perempuan = view.findViewById(R.id.perempuan);
-//        jeniskelamin = view.findViewById(R.id.jeniskelamin);
+//        laki = view.findViewById(R.id.lakilaki);
+//        perempuan = view.findViewById(R.id.perempuan);
+        keterangan = view.findViewById(R.id.keterangan);
+        medsos =view.findViewById(R.id.mediasosial);
         email = view.findViewById(R.id.email);
         nohp = view.findViewById(R.id.nohp);
         asalkampus = view.findViewById(R.id.asalkampus);
@@ -99,14 +100,17 @@ public class PendaftaranFragment extends Fragment implements AdapterView.OnItemS
 
         daftar.setOnClickListener(v -> {
             if (nama.getText().toString().isEmpty() ||email.getText().toString().isEmpty()
-                    || nohp.getText().toString().isEmpty() || asalkampus.getText().toString().isEmpty() ) {
+                    || nohp.getText().toString().isEmpty() || asalkampus.getText().toString().isEmpty() ||medsos.getText().toString().isEmpty()||keterangan.getText().toString().isEmpty()) {
                 nama.setError("Empty");
-
+                medsos.setError("Empty");
+                keterangan.setError("Empty");
                 email.setError("Empty");
                 nohp.setError("Empty");
                 asalkampus.setError("Empty");
 
                 nama.requestFocus();
+                medsos.requestFocus();
+                keterangan.requestFocus();
 //                jeniskelamin.requestFocus();
                 email.requestFocus();
                 nohp.requestFocus();
@@ -168,6 +172,8 @@ public class PendaftaranFragment extends Fragment implements AdapterView.OnItemS
 
 
 //        String jk = jeniskelamin.getText().toString();
+        String media= medsos.getText().toString();
+        String ket = keterangan.getText().toString();
         String eml = email.getText().toString();
         String hp = nohp.getText().toString();
         String asalkmps = asalkampus.getText().toString();
@@ -182,7 +188,7 @@ public class PendaftaranFragment extends Fragment implements AdapterView.OnItemS
         SimpleDateFormat currentTime = new SimpleDateFormat("hh:mm a");
         String time = currentTime.format(calForTime.getTime());
 
-        Pendaftaran pendaftaran = new Pendaftaran(name, eml, hp, asalkmps, crs, dowloadUrl, date, time, uniqueKey);
+        Pendaftaran pendaftaran = new Pendaftaran(name, eml, hp,media,ket, asalkmps, crs, dowloadUrl, date, time, uniqueKey);
 
         reference.child(uniqueKey).setValue(pendaftaran).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override

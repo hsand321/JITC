@@ -2,6 +2,7 @@ package com.example.jitc.UI;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -15,9 +16,9 @@ import com.example.jitc.R;
 import com.ismaeldivita.chipnavigation.ChipNavigationBar;
 
 public class MainActivity extends AppCompatActivity {
-
+    ChipNavigationBar BottomNav;
     private Fragment fragment = null;
-
+    FragmentManager fragmentManager;
     @SuppressLint("NonConstantResourceId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,12 +26,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        ChipNavigationBar chipNavigationBar = findViewById(R.id.bottomBar);
 
-        chipNavigationBar.setItemSelected(R.id.nav_home, true);
-        getSupportFragmentManager().beginTransaction().replace(R.id.container, new HomeFragment()).commit();
-
-        chipNavigationBar.setOnItemSelectedListener(i -> {
+        BottomNav = findViewById(R.id.bottomBar);
+        if (savedInstanceState == null) {
+            BottomNav.setItemSelected(R.id.home, true);
+            fragmentManager = getSupportFragmentManager();
+            HomeFragment homeFragment = new HomeFragment();
+            fragmentManager.beginTransaction()
+                    .replace(R.id.container, homeFragment)
+                    .commit();
+        }
+        BottomNav.setOnItemSelectedListener(i -> {
             switch (i) {
                 case R.id.nav_home:
                     fragment = new HomeFragment();

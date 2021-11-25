@@ -27,8 +27,10 @@ import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.example.jitc.BerhasilActivity;
 import com.example.jitc.Model.Pendaftaran;
 import com.example.jitc.R;
+import com.example.jitc.UI.MainActivity;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
@@ -49,8 +51,8 @@ import static android.app.Activity.RESULT_OK;
 public class PendaftaranFragment extends Fragment implements AdapterView.OnItemSelectedListener {
 
     private ImageView addImage, profile;
-    private EditText nama, email,keterangan, medsos, nohp, asalkampus;
-    private ImageButton daftar;
+    private EditText pendaftarnama, pendaftaremail,pendaftarketerangan, pendaftarmedsos, pendaftarnohp, pendaftarasalkampus;
+    private Button daftar;
     Pendaftaran pendaftaran;
     private Spinner spinner;
     private String item;
@@ -70,7 +72,6 @@ public class PendaftaranFragment extends Fragment implements AdapterView.OnItemS
         View view = inflater.inflate(R.layout.fragment_pendaftaran, container, false);
         reference = FirebaseDatabase.getInstance().getReference();
         storageReference = FirebaseStorage.getInstance().getReference();
-//Spinner
         spinner= view.findViewById(R.id.spinner);
         spinner.setOnItemSelectedListener(this);
 
@@ -78,43 +79,38 @@ public class PendaftaranFragment extends Fragment implements AdapterView.OnItemS
         ArrayAdapter arrayAdapter= new ArrayAdapter(getContext(), android.R.layout.simple_spinner_dropdown_item,training);
         arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
        spinner.setAdapter(arrayAdapter);
-        //Spinner
         pd = new ProgressDialog(getActivity());
 
         addImage = view.findViewById(R.id.addImage);
         profile = view.findViewById(R.id.profile);
-        nama = view.findViewById(R.id.nama);
+        pendaftarnama = view.findViewById(R.id.pendaftarnama);
 
-
-//        laki = view.findViewById(R.id.lakilaki);
-//        perempuan = view.findViewById(R.id.perempuan);
-        keterangan = view.findViewById(R.id.keterangan);
-        medsos =view.findViewById(R.id.mediasosial);
-        email = view.findViewById(R.id.email);
-        nohp = view.findViewById(R.id.nohp);
-        asalkampus = view.findViewById(R.id.asalkampus);
-//        course = view.findViewById(R.id.course);
+        pendaftarketerangan = view.findViewById(R.id.pendaftarketerangan);
+        pendaftarmedsos =view.findViewById(R.id.pendaftarmediasosial);
+        pendaftaremail = view.findViewById(R.id.pendaftaremail);
+        pendaftarnohp = view.findViewById(R.id.pendaftarnohp);
+        pendaftarasalkampus = view.findViewById(R.id.pendaftarasalkampus);
         daftar = view.findViewById(R.id.daftar);
 
         addImage.setOnClickListener(v -> openGallery());
 
         daftar.setOnClickListener(v -> {
-            if (nama.getText().toString().isEmpty() ||email.getText().toString().isEmpty()
-                    || nohp.getText().toString().isEmpty() || asalkampus.getText().toString().isEmpty() ||medsos.getText().toString().isEmpty()||keterangan.getText().toString().isEmpty()) {
-                nama.setError("Empty");
-                medsos.setError("Empty");
-                keterangan.setError("Empty");
-                email.setError("Empty");
-                nohp.setError("Empty");
-                asalkampus.setError("Empty");
+            if (pendaftarnama.getText().toString().isEmpty() ||pendaftaremail.getText().toString().isEmpty()
+                    || pendaftarnohp.getText().toString().isEmpty() || pendaftarasalkampus.getText().toString().isEmpty()
+                    ||pendaftarmedsos.getText().toString().isEmpty()||pendaftarketerangan.getText().toString().isEmpty()) {
+                pendaftarnama.setError("Wajib terisi");
+                pendaftarmedsos.setError("Wajib terisi");
+                pendaftarketerangan.setError("Wajib terisi");
+                pendaftaremail.setError("Wajib terisi");
+                pendaftarnohp.setError("Wajib terisi");
+                pendaftarasalkampus.setError("Wajib terisi");
 
-                nama.requestFocus();
-                medsos.requestFocus();
-                keterangan.requestFocus();
-//                jeniskelamin.requestFocus();
-                email.requestFocus();
-                nohp.requestFocus();
-                asalkampus.requestFocus();
+                pendaftarnama.requestFocus();
+                pendaftarmedsos.requestFocus();
+                pendaftarketerangan.requestFocus();
+                pendaftaremail.requestFocus();
+                pendaftarnohp.requestFocus();
+                pendaftarasalkampus.requestFocus();
         ;
             } else if (bitmap == null) {
                 final Dialog dialog1 = new Dialog(getActivity());
@@ -165,20 +161,13 @@ public class PendaftaranFragment extends Fragment implements AdapterView.OnItemS
         reference = reference.child("Pendaftar");
         final String uniqueKey = reference.push().getKey();
 
-        String name = nama.getText().toString();
-
-//        String lakilaki = laki.getText().toString();
-//        String perempuan1= perempuan.getText().toString();
-
-
-//        String jk = jeniskelamin.getText().toString();
-        String media= medsos.getText().toString();
-        String ket = keterangan.getText().toString();
-        String eml = email.getText().toString();
-        String hp = nohp.getText().toString();
-        String asalkmps = asalkampus.getText().toString();
+        String namependaftar = pendaftarnama.getText().toString();
+        String mediapendaftar= pendaftarmedsos.getText().toString();
+        String ketpendaftar = pendaftarketerangan.getText().toString();
+        String emlpendaftar = pendaftaremail.getText().toString();
+        String hppendaftar = pendaftarnohp.getText().toString();
+        String asalkmpspendaftar = pendaftarasalkampus.getText().toString();
         String crs = spinner.getSelectedItem().toString();
-//        String crs = course.getText().toString();
 
         Calendar calForDate = Calendar.getInstance();
         SimpleDateFormat currentDate = new SimpleDateFormat("dd-MM-yy");
@@ -188,12 +177,21 @@ public class PendaftaranFragment extends Fragment implements AdapterView.OnItemS
         SimpleDateFormat currentTime = new SimpleDateFormat("hh:mm a");
         String time = currentTime.format(calForTime.getTime());
 
-        Pendaftaran pendaftaran = new Pendaftaran(name, eml, hp,media,ket, asalkmps, crs, dowloadUrl, date, time, uniqueKey);
+//        Pendaftaran pendaftaran = new Pendaftaran(namependaftar, emlpendaftar, hppendaftar,mediapendaftar,ketpendaftar, asalkmpspendaftar, crs, dowloadUrl, date, time, uniqueKey);
+        Pendaftaran pendaftaran = new Pendaftaran(namependaftar,ketpendaftar,mediapendaftar,emlpendaftar,hppendaftar,asalkmpspendaftar,crs, dowloadUrl, date, time, uniqueKey);
 
         reference.child(uniqueKey).setValue(pendaftaran).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void aVoid) {
                 pd.dismiss();
+                pendaftarnama.setText("");
+                pendaftarmedsos.setText("");
+                pendaftarketerangan.setText("");
+                pendaftaremail.setText("");
+                pendaftarnohp.setText("");
+                pendaftarasalkampus.setText("");
+                Intent i = new Intent(getActivity(), BerhasilActivity.class);
+                startActivity(i);
                 Toast.makeText(getActivity(), "Pendaftaran Berhasil", Toast.LENGTH_SHORT).show();
             }
         }).addOnFailureListener(new OnFailureListener() {

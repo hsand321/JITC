@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -26,6 +27,7 @@ import com.example.jitc.Course.OsNetworkActivity;
 import com.example.jitc.Course.PemogramanActivity;
 import com.example.jitc.Course.RequestActivity;
 import com.example.jitc.Course.WebActivity;
+import com.example.jitc.ViewAllCourseActivity;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -37,6 +39,7 @@ import java.util.ArrayList;
 public class HomeFragment extends Fragment {
 
     ImageView database, office, desain_grafis, web, network, pemograman, multimedia, modelling, request;
+    TextView viewall;
     private RecyclerView viewCourseRV;
     private ProgressBar progressBar;
     private ArrayList <UploadCourseData> list = new ArrayList<>();
@@ -53,7 +56,7 @@ public class HomeFragment extends Fragment {
         viewCourseRV = view.findViewById(R.id.viewCourseRV);
         progressBar = view.findViewById(R.id.progressBar);
 
-        reference = FirebaseDatabase.getInstance().getReference().child("Note");
+        reference = FirebaseDatabase.getInstance().getReference().child("Pelatihan");
 
         viewCourseRV.setLayoutManager(new LinearLayoutManager(getContext()));
         viewCourseRV.setHasFixedSize(true);
@@ -98,7 +101,11 @@ public class HomeFragment extends Fragment {
         multimedia = view.findViewById(R.id.multimedia);
         modelling = view.findViewById(R.id.modelling);
         request = view.findViewById(R.id.request);
-
+        viewall = view.findViewById(R.id.viewall);
+        viewall.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), ViewAllCourseActivity.class);
+            startActivity(intent);
+        });
         database.setOnClickListener(v -> {
             Intent intent = new Intent(getActivity(), DatabaseActivity.class);
             startActivity(intent);

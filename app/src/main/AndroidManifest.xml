@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JITC">
         <activity
+            android:name=".ViewAllCourseActivity"
+            android:exported="true" />
+        <activity
             android:name=".BerhasilActivity"
             android:exported="true" />
         <activity android:name=".UI.DetailCourseActivity" />

@@ -51,12 +51,12 @@ import static android.app.Activity.RESULT_OK;
 public class PendaftaranFragment extends Fragment implements AdapterView.OnItemSelectedListener {
 
     private ImageView addImage, profile;
-    private EditText pendaftarnama, pendaftaremail,pendaftarketerangan, pendaftarmedsos, pendaftarnohp, pendaftarasalkampus;
+    private EditText pendaftarnama, pendaftaremail, pendaftarketerangan, pendaftarmedsos, pendaftarnohp, pendaftarasalkampus;
     private Button daftar;
     Pendaftaran pendaftaran;
     private Spinner spinner;
     private String item;
-    String[] training={"Pilih","Computer For Kids","Pra Kuliah","Intensive TA & Skripsi","Office","Mobile Programming","Web Programming","Digital Marketing","Design Grafis","By Request "};
+    String[] training = {"Pilih", "Computer For Kids", "Pra Kuliah", "Intensive TA & Skripsi", "Office", "Mobile Programming", "Web Programming", "Digital Marketing", "Design Grafis", "By Request "};
     private RadioButton laki, perempuan;
     private final int REQ = 1;
     private Bitmap bitmap;
@@ -72,13 +72,13 @@ public class PendaftaranFragment extends Fragment implements AdapterView.OnItemS
         View view = inflater.inflate(R.layout.fragment_pendaftaran, container, false);
         reference = FirebaseDatabase.getInstance().getReference();
         storageReference = FirebaseStorage.getInstance().getReference();
-        spinner= view.findViewById(R.id.spinner);
+        spinner = view.findViewById(R.id.spinner);
         spinner.setOnItemSelectedListener(this);
 
         pendaftaran = new Pendaftaran();
-        ArrayAdapter arrayAdapter= new ArrayAdapter(getContext(), android.R.layout.simple_spinner_dropdown_item,training);
+        ArrayAdapter arrayAdapter = new ArrayAdapter(getContext(), android.R.layout.simple_spinner_dropdown_item, training);
         arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-       spinner.setAdapter(arrayAdapter);
+        spinner.setAdapter(arrayAdapter);
         pd = new ProgressDialog(getActivity());
 
         addImage = view.findViewById(R.id.addImage);
@@ -86,7 +86,7 @@ public class PendaftaranFragment extends Fragment implements AdapterView.OnItemS
         pendaftarnama = view.findViewById(R.id.pendaftarnama);
 
         pendaftarketerangan = view.findViewById(R.id.pendaftarketerangan);
-        pendaftarmedsos =view.findViewById(R.id.pendaftarmediasosial);
+        pendaftarmedsos = view.findViewById(R.id.pendaftarmediasosial);
         pendaftaremail = view.findViewById(R.id.pendaftaremail);
         pendaftarnohp = view.findViewById(R.id.pendaftarnohp);
         pendaftarasalkampus = view.findViewById(R.id.pendaftarasalkampus);
@@ -95,9 +95,9 @@ public class PendaftaranFragment extends Fragment implements AdapterView.OnItemS
         addImage.setOnClickListener(v -> openGallery());
 
         daftar.setOnClickListener(v -> {
-            if (pendaftarnama.getText().toString().isEmpty() ||pendaftaremail.getText().toString().isEmpty()
+            if (pendaftarnama.getText().toString().isEmpty() || pendaftaremail.getText().toString().isEmpty()
                     || pendaftarnohp.getText().toString().isEmpty() || pendaftarasalkampus.getText().toString().isEmpty()
-                    ||pendaftarmedsos.getText().toString().isEmpty()||pendaftarketerangan.getText().toString().isEmpty()) {
+                    || pendaftarmedsos.getText().toString().isEmpty() || pendaftarketerangan.getText().toString().isEmpty()) {
                 pendaftarnama.setError("Wajib terisi");
                 pendaftarmedsos.setError("Wajib terisi");
                 pendaftarketerangan.setError("Wajib terisi");
@@ -111,27 +111,9 @@ public class PendaftaranFragment extends Fragment implements AdapterView.OnItemS
                 pendaftaremail.requestFocus();
                 pendaftarnohp.requestFocus();
                 pendaftarasalkampus.requestFocus();
-        ;
+                ;
             } else if (bitmap == null) {
-                final Dialog dialog1 = new Dialog(getActivity());
-                dialog1.setContentView(R.layout.konfirmasi);
-                ImageView sudah1 = dialog1.findViewById(R.id.sudah);
-                sudah1.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        uploadData();
-                    }
-                });
-                ImageView belum1 = dialog1.findViewById(R.id.belum);
-                belum1.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        dialog1.dismiss();
-                    }
-                });
-                dialog1.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-                dialog1.show();
-
+                Toast.makeText(getActivity(), "Foto Wajib Terisi", Toast.LENGTH_SHORT).show();
             } else {
                 final Dialog dialog2 = new Dialog(getActivity());
                 dialog2.setContentView(R.layout.konfirmasi);
@@ -162,7 +144,7 @@ public class PendaftaranFragment extends Fragment implements AdapterView.OnItemS
         final String uniqueKey = reference.push().getKey();
 
         String namependaftar = pendaftarnama.getText().toString();
-        String mediapendaftar= pendaftarmedsos.getText().toString();
+        String mediapendaftar = pendaftarmedsos.getText().toString();
         String ketpendaftar = pendaftarketerangan.getText().toString();
         String emlpendaftar = pendaftaremail.getText().toString();
         String hppendaftar = pendaftarnohp.getText().toString();
@@ -178,7 +160,7 @@ public class PendaftaranFragment extends Fragment implements AdapterView.OnItemS
         String time = currentTime.format(calForTime.getTime());
 
 //        Pendaftaran pendaftaran = new Pendaftaran(namependaftar, emlpendaftar, hppendaftar,mediapendaftar,ketpendaftar, asalkmpspendaftar, crs, dowloadUrl, date, time, uniqueKey);
-        Pendaftaran pendaftaran = new Pendaftaran(namependaftar,ketpendaftar,mediapendaftar,emlpendaftar,hppendaftar,asalkmpspendaftar,crs, dowloadUrl, date, time, uniqueKey);
+        Pendaftaran pendaftaran = new Pendaftaran(namependaftar, ketpendaftar, mediapendaftar, emlpendaftar, hppendaftar, asalkmpspendaftar, crs, dowloadUrl, date, time, uniqueKey);
 
         reference.child(uniqueKey).setValue(pendaftaran).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
@@ -205,7 +187,7 @@ public class PendaftaranFragment extends Fragment implements AdapterView.OnItemS
     }
 
     private void uploadImage() {
-        pd.setMessage("Uploading...");
+        pd.setMessage("Proses Pendaftaran...");
         pd.show();
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         bitmap.compress(Bitmap.CompressFormat.JPEG, 50, baos);
@@ -228,8 +210,19 @@ public class PendaftaranFragment extends Fragment implements AdapterView.OnItemS
     }
 
     private void openGallery() {
-        Intent pickimage = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-        startActivityForResult(pickimage, REQ);
+        Intent getIntent = new Intent(Intent.ACTION_GET_CONTENT);
+        getIntent.setType("image/*");
+
+
+        Intent pickIntent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+        pickIntent.setType("image/*");
+
+        Intent chooserIntent = Intent.createChooser(getIntent, "Select Image");
+        chooserIntent.putExtra(Intent.EXTRA_INITIAL_INTENTS, new Intent[] {pickIntent});
+
+        startActivityForResult(chooserIntent, REQ);
+//        Intent pickimage = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+//        startActivityForResult(pickimage, REQ);
     }
 
     @Override
@@ -243,6 +236,7 @@ public class PendaftaranFragment extends Fragment implements AdapterView.OnItemS
             } catch (IOException e) {
                 e.printStackTrace();
             }
+            addImage.setVisibility(View.GONE);
             profile.setImageBitmap(bitmap);
         }
     }

@@ -33,6 +33,6 @@
         app:cnb_backgroundColor="#FFD600"
         app:cnb_iconColor="#fff"
         app:cnb_textColor="#fff"
-        android:title="About" />
+        android:title="Tentang" />
 
 </menu>

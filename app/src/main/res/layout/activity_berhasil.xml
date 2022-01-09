@@ -28,5 +28,16 @@
         android:textAlignment="center"
         android:fontFamily="@font/poppinsmedium"
         android:textSize="16sp"
-        android:text="Tunggu hingga Admin kami \nMenghubungi Andal"/>
+        android:text="Tunggu hingga Admin kami \nMenghubungi Anda"/>
+    <Button
+        android:id="@+id/backhome"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="50dp"
+        android:text="Home"
+        />
+
 </LinearLayout>

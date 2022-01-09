@@ -237,6 +237,28 @@
 
         </RelativeLayout>
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="-20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/ic_gradientwhite">
+            <TextView
+                android:id="@+id/viewall"
+                android:layout_width="match_parent"
+                android:text="View all"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppinssb"
+                android:textSize="12sp"
+                android:textColor="@color/purple_700"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

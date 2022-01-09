@@ -3,14 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/#ABDI/JITC/JITC/app/src/main/res/layout/activity_berhasil.xml" value="0.20520833333333333" />
+        <entry key="..\:/#ABDI/JITC/JITC/app/src/main/res/layout/activity_berhasil.xml" value="0.33" />
         <entry key="..\:/#ABDI/JITC/JITC/app/src/main/res/layout/activity_database.xml" value="0.33" />
         <entry key="..\:/#ABDI/JITC/JITC/app/src/main/res/layout/activity_detail_course.xml" value="0.20520833333333333" />
         <entry key="..\:/#ABDI/JITC/JITC/app/src/main/res/layout/activity_get_started.xml" value="0.25" />
         <entry key="..\:/#ABDI/JITC/JITC/app/src/main/res/layout/activity_main.xml" value="0.20520833333333333" />
+        <entry key="..\:/#ABDI/JITC/JITC/app/src/main/res/layout/activity_os_network.xml" value="0.20520833333333333" />
         <entry key="..\:/#ABDI/JITC/JITC/app/src/main/res/layout/activity_splash.xml" value="0.22" />
+        <entry key="..\:/#ABDI/JITC/JITC/app/src/main/res/layout/activity_view_all_course.xml" value="0.33" />
+        <entry key="..\:/#ABDI/JITC/JITC/app/src/main/res/layout/course_list_item.xml" value="0.1" />
         <entry key="..\:/#ABDI/JITC/JITC/app/src/main/res/layout/fragment_about.xml" value="0.1" />
-        <entry key="..\:/#ABDI/JITC/JITC/app/src/main/res/layout/fragment_pendaftaran.xml" value="0.2" />
+        <entry key="..\:/#ABDI/JITC/JITC/app/src/main/res/layout/fragment_home.xml" value="0.33" />
+        <entry key="..\:/#ABDI/JITC/JITC/app/src/main/res/layout/fragment_pendaftaran.xml" value="0.33" />
+        <entry key="..\:/#ABDI/JITC/JITC/app/src/main/res/menu/item_menu.xml" value="0.1" />
       </map>
     </option>
   </component>

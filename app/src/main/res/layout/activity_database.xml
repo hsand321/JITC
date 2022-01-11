@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorDatabase"
     android:fitsSystemWindows="true"
-    tools:context=".Course.DatabaseActivity">
+    tools:context="com.jitcproject.jitc.Course.DatabaseActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/AppbarLayout"

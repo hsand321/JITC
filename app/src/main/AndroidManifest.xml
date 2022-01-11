@@ -12,30 +12,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JITC">
         <activity
-            android:name=".ViewAllCourseActivity"
+            android:name="com.jitcproject.jitc.ViewAllCourseActivity"
             android:exported="true" />
         <activity
-            android:name=".BerhasilActivity"
+            android:name="com.jitcproject.jitc.BerhasilActivity"
             android:exported="true" />
-        <activity android:name=".UI.DetailCourseActivity" />
-        <activity android:name=".UI.GetStartedActivity" />
-        <activity android:name=".UI.SplashActivity">
+        <activity android:name="com.jitcproject.jitc.UI.DetailCourseActivity" />
+        <activity android:name="com.jitcproject.jitc.UI.GetStartedActivity" />
+        <activity android:name="com.jitcproject.jitc.UI.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".UI.MainActivity" />
-        <activity android:name=".Course.OfficeActivity" />
-        <activity android:name=".Course.DesainGrafisActivity" />
-        <activity android:name=".Course.WebActivity" />
-        <activity android:name=".Course.DatabaseActivity" />
-        <activity android:name=".Course.OsNetworkActivity" />
-        <activity android:name=".Course.PemogramanActivity" />
-        <activity android:name=".Course.MultimediaActivity" />
-        <activity android:name=".Course.ModellingActivity" />
-        <activity android:name=".Course.RequestActivity" />
+        <activity android:name="com.jitcproject.jitc.UI.MainActivity" />
+        <activity android:name="com.jitcproject.jitc.Course.OfficeActivity" />
+        <activity android:name="com.jitcproject.jitc.Course.DesainGrafisActivity" />
+        <activity android:name="com.jitcproject.jitc.Course.WebActivity" />
+        <activity android:name="com.jitcproject.jitc.Course.DatabaseActivity" />
+        <activity android:name="com.jitcproject.jitc.Course.OsNetworkActivity" />
+        <activity android:name="com.jitcproject.jitc.Course.PemogramanActivity" />
+        <activity android:name="com.jitcproject.jitc.Course.MultimediaActivity" />
+        <activity android:name="com.jitcproject.jitc.Course.ModellingActivity" />
+        <activity android:name="com.jitcproject.jitc.Course.RequestActivity" />
     </application>
 
 </manifest>

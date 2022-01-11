@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bggetstarted"
-    tools:context=".UI.GetStartedActivity">
+    tools:context="com.jitcproject.jitc.UI.GetStartedActivity">
 
     <ImageButton
         android:id="@+id/btngetstarted"

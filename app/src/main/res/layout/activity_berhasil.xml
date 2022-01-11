@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".BerhasilActivity">
+    tools:context="com.jitcproject.jitc.BerhasilActivity">
 
     <ImageView
         android:layout_width="267dp"
